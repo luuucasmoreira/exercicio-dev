@@ -1,0 +1,32 @@
+<html>
+    <head>
+<meta charset="utf-8">
+<title>Loop</title>
+</head>
+<body>
+        <input id="valorid" oninput="myFunction()"  style="width: 50px;" type="text" name="valor" value="0">
+        
+    <script type="text/javascript">
+   
+   function myFunction(){
+       var rows = document.getElementById("valorid").value;
+       
+       for(var i=1; i<=rows; i++)
+    {
+        for(var k=1; k<=( rows-i ); k++)
+        {
+            document.write("_")
+        }
+        for(var j=1; j<=i; j++)
+        {
+            document.write("*_" );
+        }
+        document.write("<br/>");
+    }
+   }
+    
+    </script>
+
+ 
+</body>
+</html>
